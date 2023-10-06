@@ -12,7 +12,7 @@ public class Biblioteca_14 {
        
        // INSTANCIAR LIBRO
 //        Libro habAt = new Libro (123456987,"Hábitos Atómicos", "James Clear", "Desarrollo Personal", "Paidós", true);
-        Libro cronica = new Libro (654321,"Crónica de una muerta anunciada", "Gabriel García Marquez", "Novela", "La oveja negra", true);
+//        Libro cronica = new Libro (5, 654321,"Crónica de una muerte anunciada", "Gabriel García Marquez", "Novela", "La oveja negra", true);
 //        
        //INSTANCIAR LIBRO DATA
         LibroData libData = new LibroData();
@@ -28,10 +28,17 @@ public class Biblioteca_14 {
 //        }
 
         //MODIFICAR LIBRO:        
-        libData.modificarLibro(cronica);
+//        libData.modificarLibro(cronica);
         
+        //BUSCAR LIBRO:
+//        System.out.println(libData.buscarLibro(5));        
         
-        
+        //BUSCAR LIBRO por título:
+         
+        for (Libro libro : libData.buscarPorEditoral("la")) {
+            System.out.println(libro.toString());
+        }
+            
     }
     
 }

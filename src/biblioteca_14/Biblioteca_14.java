@@ -1,8 +1,12 @@
 
 package biblioteca_14;
 
+import accesoADatos.LectorData;
 import accesoADatos.LibroData;
+import entidades.Lector;
 import entidades.Libro;
+import java.time.LocalDate;
+import java.time.Month;
 
 public class Biblioteca_14 {
 
@@ -21,10 +25,8 @@ public class Biblioteca_14 {
        //libData.guardarLibro(cronica);
         
        //LISTAR LIBROS:
-//        for (Libro libro : libData.listarLibros()) {
-//            
-//            System.out.println(libro.toString());
-//            
+//        for (Libro libro : libData.listarLibros()) {            
+//            System.out.println(libro.toString());            
 //        }
 
         //MODIFICAR LIBRO:        
@@ -35,9 +37,27 @@ public class Biblioteca_14 {
         
         //BUSCAR LIBRO por título:
          
-        for (Libro libro : libData.buscarPorEditoral("la")) {
-            System.out.println(libro.toString());
-        }
+//        for (Libro libro : libData.buscarPorEditoral("la")) {
+//            System.out.println(libro.toString());
+//        }
+
+        //INSANCIAR LECTOR Y LECTORDATA
+        LectorData lecData = new LectorData();
+       // Lector lector = new Lector(2, "Gomez", "Pedro", 28353654, LocalDate.of(1980, 02, 12), "Alberdi 456", 280456235, "pedroGomez@gmail.com", true);
+        
+       //GUARDAR NUEVO LECTOR
+        //lecData.guardarLector(lector);
+        
+       //MODIFOCAR LECTOR
+        //lecData.modificarLector(lector);
+       
+       //LISTAR LECTORES
+//        for (Lector lector : lecData.listarLectores()) {
+//            System.out.println(lector.toString());
+//        }
+
+       //ELIMINAR LECTOR
+        //lecData.eliminarLector(2);
             
     }
     

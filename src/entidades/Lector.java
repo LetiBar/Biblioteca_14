@@ -17,7 +17,7 @@ public class Lector {
     public Lector() {
     }
 
-    public Lector(int idLector, String nombre, String apellido, int dni, LocalDate fechaNac, String direccion, int telefono, String mail, boolean activo) {
+    public Lector(int idLector, String apellido, String nombre, int dni, LocalDate fechaNac, String direccion, int telefono, String mail, boolean activo) {
         this.idLector = idLector;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -29,7 +29,7 @@ public class Lector {
         this.activo = activo;
     }
 
-    public Lector(String nombre, String apellido, int dni, LocalDate fechaNac, String direccion, int telefono, String mail, boolean activo) {
+    public Lector(String apellido, String nombre, int dni, LocalDate fechaNac, String direccion, int telefono, String mail, boolean activo) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.dni = dni;
@@ -111,7 +111,12 @@ public class Lector {
     public void setActivo(boolean activo) {
         this.activo = activo;
     }
-    
 
+    @Override
+    public String toString() {
+        return "Lector {" + "id: " + idLector + ", nombre y apellido: " + nombre + ", "+ apellido + ", dni: " + dni + ", fecha Nac: " + fechaNac + ", direccion: " + direccion + ", telefono: " + telefono + ", mail: " + mail + ", estado: " + activo + '}';
+    }
+    
+    
     
 }
